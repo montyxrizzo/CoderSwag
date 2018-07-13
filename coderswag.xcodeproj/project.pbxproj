@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		DC5DBD9920F7CC81002EA1AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5DBD9820F7CC81002EA1AB /* AppDelegate.swift */; };
-		DC5DBD9B20F7CC81002EA1AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5DBD9A20F7CC81002EA1AB /* ViewController.swift */; };
+		DC5DBD9B20F7CC81002EA1AB /* CatagoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5DBD9A20F7CC81002EA1AB /* CatagoriesVC.swift */; };
 		DC5DBD9E20F7CC81002EA1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5DBD9C20F7CC81002EA1AB /* Main.storyboard */; };
 		DC5DBDA120F7CC81002EA1AB /* coderswag.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC5DBD9F20F7CC81002EA1AB /* coderswag.xcdatamodeld */; };
 		DC5DBDA320F7CC82002EA1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5DBDA220F7CC82002EA1AB /* Assets.xcassets */; };
 		DC5DBDA620F7CC82002EA1AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5DBDA420F7CC82002EA1AB /* LaunchScreen.storyboard */; };
+		DC5DBDB120F7CFE5002EA1AB /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5DBDB020F7CFE5002EA1AB /* CategoryCell.swift */; };
+		DC5DBDB320F7D276002EA1AB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5DBDB220F7D276002EA1AB /* Category.swift */; };
+		DC5DBDB620F7E134002EA1AB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5DBDB520F7E134002EA1AB /* DataService.swift */; };
+		DC5DBDB820F7F8FC002EA1AB /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5DBDB720F7F8FC002EA1AB /* ProductCell.swift */; };
+		DC5DBDBC20F7F9C7002EA1AB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5DBDBB20F7F9C7002EA1AB /* Product.swift */; };
+		DC5DBDBE20F7FE06002EA1AB /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5DBDBD20F7FE06002EA1AB /* ProductsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC5DBD9520F7CC81002EA1AB /* coderswag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coderswag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5DBD9820F7CC81002EA1AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC5DBD9A20F7CC81002EA1AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC5DBD9A20F7CC81002EA1AB /* CatagoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoriesVC.swift; sourceTree = "<group>"; };
 		DC5DBD9D20F7CC81002EA1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC5DBDA020F7CC81002EA1AB /* coderswag.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coderswag.xcdatamodel; sourceTree = "<group>"; };
 		DC5DBDA220F7CC82002EA1AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC5DBDA520F7CC82002EA1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC5DBDA720F7CC82002EA1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5DBDB020F7CFE5002EA1AB /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		DC5DBDB220F7D276002EA1AB /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		DC5DBDB520F7E134002EA1AB /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		DC5DBDB720F7F8FC002EA1AB /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		DC5DBDBB20F7F9C7002EA1AB /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		DC5DBDBD20F7FE06002EA1AB /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +68,11 @@
 		DC5DBD9720F7CC81002EA1AB /* coderswag */ = {
 			isa = PBXGroup;
 			children = (
+				DC5DBDB420F7D3FB002EA1AB /* Services */,
+				DC5DBDAF20F7CF9A002EA1AB /* Views */,
+				DC5DBDAE20F7CF8A002EA1AB /* Model */,
+				DC5DBDAD20F7CF81002EA1AB /* Controllers */,
 				DC5DBD9820F7CC81002EA1AB /* AppDelegate.swift */,
-				DC5DBD9A20F7CC81002EA1AB /* ViewController.swift */,
 				DC5DBD9C20F7CC81002EA1AB /* Main.storyboard */,
 				DC5DBDA220F7CC82002EA1AB /* Assets.xcassets */,
 				DC5DBDA420F7CC82002EA1AB /* LaunchScreen.storyboard */,
@@ -65,6 +80,41 @@
 				DC5DBD9F20F7CC81002EA1AB /* coderswag.xcdatamodeld */,
 			);
 			path = coderswag;
+			sourceTree = "<group>";
+		};
+		DC5DBDAD20F7CF81002EA1AB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC5DBD9A20F7CC81002EA1AB /* CatagoriesVC.swift */,
+				DC5DBDBD20F7FE06002EA1AB /* ProductsVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DC5DBDAE20F7CF8A002EA1AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC5DBDB220F7D276002EA1AB /* Category.swift */,
+				DC5DBDBB20F7F9C7002EA1AB /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC5DBDAF20F7CF9A002EA1AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC5DBDB020F7CFE5002EA1AB /* CategoryCell.swift */,
+				DC5DBDB720F7F8FC002EA1AB /* ProductCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC5DBDB420F7D3FB002EA1AB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DC5DBDB520F7E134002EA1AB /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC5DBDA120F7CC81002EA1AB /* coderswag.xcdatamodeld in Sources */,
-				DC5DBD9B20F7CC81002EA1AB /* ViewController.swift in Sources */,
+				DC5DBDBC20F7F9C7002EA1AB /* Product.swift in Sources */,
+				DC5DBDB320F7D276002EA1AB /* Category.swift in Sources */,
+				DC5DBD9B20F7CC81002EA1AB /* CatagoriesVC.swift in Sources */,
+				DC5DBDB620F7E134002EA1AB /* DataService.swift in Sources */,
 				DC5DBD9920F7CC81002EA1AB /* AppDelegate.swift in Sources */,
+				DC5DBDB820F7F8FC002EA1AB /* ProductCell.swift in Sources */,
+				DC5DBDB120F7CFE5002EA1AB /* CategoryCell.swift in Sources */,
+				DC5DBDBE20F7FE06002EA1AB /* ProductsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
